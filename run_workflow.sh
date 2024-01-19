@@ -14,7 +14,7 @@ touch workspace/tmp/resultBundleStream.json
 xcodebuild build-for-testing \
     -scheme DangoOpenAPI \
     -project DangoOpenAPI.xcodeproj \
-    -destination "platform=iOS Simulator" \
+    -destination "platform=iOS Simulator,name=iPhone 15" \
     -testProductsPath workspace/TestProducts.xctestproducts \
     -derivedDataPath workspace/DerivedData \
     -resultBundleVersion 3 \
