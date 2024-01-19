@@ -22,6 +22,7 @@
 		F47FFF182B5A79D600E408A8 /* DangoOpenAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DangoOpenAPI.entitlements; sourceTree = "<group>"; };
 		F47FFF1A2B5A79D600E408A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F47FFF222B5A7A4700E408A8 /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
+		F47FFF2C2B5A894500E408A8 /* SwiftLintPlugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SwiftLintPlugin; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		F47FFF212B5A7A1C00E408A8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F47FFF2C2B5A894500E408A8 /* SwiftLintPlugin */,
 				F47FFF222B5A7A4700E408A8 /* Data */,
 			);
 			path = Modules;
@@ -103,6 +105,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F41252B12B5A89E200EB7C29 /* PBXTargetDependency */,
 			);
 			name = DangoOpenAPI;
 			packageProductDependencies = (
@@ -136,6 +139,8 @@
 				Base,
 			);
 			mainGroup = F47FFF062B5A79D500E408A8;
+			packageReferences = (
+			);
 			productRefGroup = F47FFF102B5A79D500E408A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -168,6 +173,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F41252B12B5A89E200EB7C29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = F41252B02B5A89E200EB7C29 /* SwiftLint */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F47FFF1C2B5A79D600E408A8 /* Debug */ = {
@@ -384,6 +396,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F41252B02B5A89E200EB7C29 /* SwiftLint */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "plugin:SwiftLint";
+		};
 		F47FFF242B5A7AD000E408A8 /* Data */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Data;
