@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "5B78BC95-13B4-47BA-92A6-F76F7BC7CCD9",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:DangoOpenAPI.xcodeproj",
+      "identifier" : "F47FFF0E2B5A79D500E408A8",
+      "name" : "DangoOpenAPI"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:DangoOpenAPI.xcodeproj",
+        "identifier" : "F41252B52B5A8BBB00EB7C29",
+        "name" : "DangoOpenAPITests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Modules\/Data",
+        "identifier" : "DataTests",
+        "name" : "DataTests"
+      }
+    }
+  ],
+  "version" : 1
+}
