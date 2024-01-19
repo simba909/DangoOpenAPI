@@ -37,7 +37,6 @@
 		F47FFF182B5A79D600E408A8 /* DangoOpenAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DangoOpenAPI.entitlements; sourceTree = "<group>"; };
 		F47FFF1A2B5A79D600E408A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F47FFF222B5A7A4700E408A8 /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
-		F47FFF2C2B5A894500E408A8 /* SwiftLintPlugin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SwiftLintPlugin; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +119,6 @@
 		F47FFF212B5A7A1C00E408A8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F47FFF2C2B5A894500E408A8 /* SwiftLintPlugin */,
 				F47FFF222B5A7A4700E408A8 /* Data */,
 			);
 			path = Modules;
@@ -168,7 +166,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				F41252B12B5A89E200EB7C29 /* PBXTargetDependency */,
 			);
 			name = DangoOpenAPI;
 			packageProductDependencies = (
@@ -258,10 +255,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F41252B12B5A89E200EB7C29 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = F41252B02B5A89E200EB7C29 /* SwiftLint */;
-		};
 		F41252BB2B5A8BBB00EB7C29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F47FFF0E2B5A79D500E408A8 /* DangoOpenAPI */;
@@ -540,10 +533,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F41252B02B5A89E200EB7C29 /* SwiftLint */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = "plugin:SwiftLint";
-		};
 		F41252C82B5A9DA200EB7C29 /* DataMocks */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DataMocks;
