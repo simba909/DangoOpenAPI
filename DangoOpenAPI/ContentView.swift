@@ -5,17 +5,26 @@
 //  Created by Simon Jarbrant on 2024-01-19.
 //
 
+import Data
 import SwiftUI
 
 struct ContentView: View {
+    @State var channels: [Channel] = []
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List {
+            ForEach(channels) { channel in
+                Text(channel.name)
+            }
         }
-        .padding()
+        .task {
+            do {
+                let dataSource = ChannelsDataSource()
+                self.channels = try await dataSource.channels()
+            } catch {
+                print("oh no", error)
+            }
+        }
     }
 }
 

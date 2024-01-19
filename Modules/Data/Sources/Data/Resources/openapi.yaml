@@ -1,0 +1,51 @@
+openapi: '3.1.0'
+info:
+  title: Sveriges Radio
+  version: 2.0.0
+servers:
+  - url: https://api.sr.se/api/v2
+    description: Sveriges Radio Public API V2.
+paths:
+  /channels:
+    parameters:
+      - in: query
+        name: format
+        required: false
+        description: The content type of the response object.
+        schema:
+          type: string
+          enum: [xml, json]
+          default: json
+    get:
+      operationId: getChannels
+      responses:
+        '200':
+          description: A success response with a list of channels.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChannelsResponse'
+components:
+  schemas:
+    ChannelsResponse:
+      type: object
+      properties:
+        channels:
+          type: array
+          items:
+            $ref: '#/components/schemas/Channel'
+      required:
+        - channels
+    Channel:
+      type: object
+      description: An SR (Sveriges Radio) radio station.
+      properties:
+        id:
+          type: integer
+          description: The unique id of the channel.
+        name:
+          type: string
+          description: The name of the channel.
+      required:
+        - id
+        - name

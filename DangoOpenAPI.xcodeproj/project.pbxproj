@@ -11,6 +11,7 @@
 		F47FFF152B5A79D500E408A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FFF142B5A79D500E408A8 /* ContentView.swift */; };
 		F47FFF172B5A79D600E408A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47FFF162B5A79D600E408A8 /* Assets.xcassets */; };
 		F47FFF1B2B5A79D600E408A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47FFF1A2B5A79D600E408A8 /* Preview Assets.xcassets */; };
+		F47FFF252B5A7AD000E408A8 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = F47FFF242B5A7AD000E408A8 /* Data */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		F47FFF162B5A79D600E408A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F47FFF182B5A79D600E408A8 /* DangoOpenAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DangoOpenAPI.entitlements; sourceTree = "<group>"; };
 		F47FFF1A2B5A79D600E408A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F47FFF222B5A7A4700E408A8 /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F47FFF252B5A7AD000E408A8 /* Data in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,7 +40,9 @@
 			isa = PBXGroup;
 			children = (
 				F47FFF112B5A79D500E408A8 /* DangoOpenAPI */,
+				F47FFF212B5A7A1C00E408A8 /* Modules */,
 				F47FFF102B5A79D500E408A8 /* Products */,
+				F47FFF232B5A7AD000E408A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +74,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F47FFF212B5A7A1C00E408A8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F47FFF222B5A7A4700E408A8 /* Data */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F47FFF232B5A7AD000E408A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +105,9 @@
 			dependencies = (
 			);
 			name = DangoOpenAPI;
+			packageProductDependencies = (
+				F47FFF242B5A7AD000E408A8 /* Data */,
+			);
 			productName = DangoOpenAPI;
 			productReference = F47FFF0F2B5A79D500E408A8 /* DangoOpenAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -359,6 +382,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F47FFF242B5A7AD000E408A8 /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F47FFF072B5A79D500E408A8 /* Project object */;
 }
