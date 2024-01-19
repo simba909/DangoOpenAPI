@@ -30,6 +30,7 @@
 		F41252B62B5A8BBB00EB7C29 /* DangoOpenAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DangoOpenAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41252B82B5A8BBB00EB7C29 /* DangoOpenAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangoOpenAPITests.swift; sourceTree = "<group>"; };
 		F41252BF2B5A8D1C00EB7C29 /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
+		F41252CA2B5AA15700EB7C29 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F47FFF0F2B5A79D500E408A8 /* DangoOpenAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DangoOpenAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47FFF122B5A79D500E408A8 /* DangoOpenAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangoOpenAPIApp.swift; sourceTree = "<group>"; };
 		F47FFF142B5A79D500E408A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 		F47FFF062B5A79D500E408A8 = {
 			isa = PBXGroup;
 			children = (
+				F41252CA2B5AA15700EB7C29 /* README.md */,
 				F47FFF112B5A79D500E408A8 /* DangoOpenAPI */,
 				F47FFF212B5A7A1C00E408A8 /* Modules */,
 				F41252B72B5A8BBB00EB7C29 /* DangoOpenAPITests */,
