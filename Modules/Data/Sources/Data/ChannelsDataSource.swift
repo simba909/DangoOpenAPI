@@ -1,6 +1,10 @@
 import OpenAPIURLSession
 
-public struct ChannelsDataSource {
+public protocol ChannelsDataSource {
+    func channels() async throws -> [Channel]
+}
+
+public struct ChannelsDataSourceImpl: ChannelsDataSource {
     public init() {
         //
     }

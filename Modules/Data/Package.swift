@@ -9,6 +9,7 @@ let package = Package(
     ],
     products: [
         .library(name: "Data", targets: ["Data"]),
+        .library(name: "DataMocks", targets: ["DataMocks"])
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-openapi-generator", .upToNextMinor(from: "1.2.0")),
@@ -26,6 +27,7 @@ let package = Package(
                 .plugin(name: "OpenAPIGenerator", package: "swift-openapi-generator")
             ]
         ),
+        .target(name: "DataMocks", dependencies: ["Data"]),
         .testTarget(
             name: "DataTests",
             dependencies: ["Data"]

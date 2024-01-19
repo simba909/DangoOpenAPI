@@ -19,7 +19,7 @@ struct ContentView: View {
         }
         .task {
             do {
-                let dataSource = ChannelsDataSource()
+                let dataSource = ChannelsDataSourceImpl()
                 self.channels = try await dataSource.channels()
             } catch {
                 print("oh no", error)

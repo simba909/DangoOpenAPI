@@ -5,7 +5,10 @@
 //  Created by Simon Jarbrant on 2024-01-19.
 //
 
+import DataMocks
 import XCTest
+
+@testable import DangoOpenAPI
 
 final class DangoOpenAPITests: XCTestCase {
 
@@ -24,12 +27,4 @@ final class DangoOpenAPITests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F41252B92B5A8BBB00EB7C29 /* DangoOpenAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41252B82B5A8BBB00EB7C29 /* DangoOpenAPITests.swift */; };
+		F41252C92B5A9DA200EB7C29 /* DataMocks in Frameworks */ = {isa = PBXBuildFile; productRef = F41252C82B5A9DA200EB7C29 /* DataMocks */; };
 		F47FFF132B5A79D500E408A8 /* DangoOpenAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FFF122B5A79D500E408A8 /* DangoOpenAPIApp.swift */; };
 		F47FFF152B5A79D500E408A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FFF142B5A79D500E408A8 /* ContentView.swift */; };
 		F47FFF172B5A79D600E408A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47FFF162B5A79D600E408A8 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41252C92B5A9DA200EB7C29 /* DataMocks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +150,9 @@
 				F41252BB2B5A8BBB00EB7C29 /* PBXTargetDependency */,
 			);
 			name = DangoOpenAPITests;
+			packageProductDependencies = (
+				F41252C82B5A9DA200EB7C29 /* DataMocks */,
+			);
 			productName = DangoOpenAPITests;
 			productReference = F41252B62B5A8BBB00EB7C29 /* DangoOpenAPITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -538,6 +543,10 @@
 		F41252B02B5A89E200EB7C29 /* SwiftLint */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "plugin:SwiftLint";
+		};
+		F41252C82B5A9DA200EB7C29 /* DataMocks */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DataMocks;
 		};
 		F47FFF242B5A7AD000E408A8 /* Data */ = {
 			isa = XCSwiftPackageProductDependency;
