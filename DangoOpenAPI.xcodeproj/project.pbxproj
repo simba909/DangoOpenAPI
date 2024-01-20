@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F41252B92B5A8BBB00EB7C29 /* DangoOpenAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41252B82B5A8BBB00EB7C29 /* DangoOpenAPITests.swift */; };
-		F41252C92B5A9DA200EB7C29 /* DataMocks in Frameworks */ = {isa = PBXBuildFile; productRef = F41252C82B5A9DA200EB7C29 /* DataMocks */; };
+		F43FB01E2B5BC2F700833CEF /* DataMocks in Frameworks */ = {isa = PBXBuildFile; productRef = F43FB01D2B5BC2F700833CEF /* DataMocks */; };
 		F47FFF132B5A79D500E408A8 /* DangoOpenAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FFF122B5A79D500E408A8 /* DangoOpenAPIApp.swift */; };
 		F47FFF152B5A79D500E408A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FFF142B5A79D500E408A8 /* ContentView.swift */; };
 		F47FFF172B5A79D600E408A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47FFF162B5A79D600E408A8 /* Assets.xcassets */; };
@@ -45,7 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F41252C92B5A9DA200EB7C29 /* DataMocks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43FB01E2B5BC2F700833CEF /* DataMocks in Frameworks */,
 				F47FFF252B5A7AD000E408A8 /* Data in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,7 +151,6 @@
 			);
 			name = DangoOpenAPITests;
 			packageProductDependencies = (
-				F41252C82B5A9DA200EB7C29 /* DataMocks */,
 			);
 			productName = DangoOpenAPITests;
 			productReference = F41252B62B5A8BBB00EB7C29 /* DangoOpenAPITests.xctest */;
@@ -172,6 +171,7 @@
 			name = DangoOpenAPI;
 			packageProductDependencies = (
 				F47FFF242B5A7AD000E408A8 /* Data */,
+				F43FB01D2B5BC2F700833CEF /* DataMocks */,
 			);
 			productName = DangoOpenAPI;
 			productReference = F47FFF0F2B5A79D500E408A8 /* DangoOpenAPI.app */;
@@ -535,7 +535,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F41252C82B5A9DA200EB7C29 /* DataMocks */ = {
+		F43FB01D2B5BC2F700833CEF /* DataMocks */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DataMocks;
 		};

@@ -3,6 +3,11 @@
 This repository contains a minimal sample app that successfully builds for testing in Xcode
 but fails to build using `xcodebuild` (and Xcode Cloud) on the command line.
 
+**Update:** As of the last commit the project now builds successfully using both Xcode
+and `xcodebuild`. The issue this sample was reproducing was a linker failure where the main
+app target - rather than the unit testing target - needed to depend on the internal SPM 
+package products.
+
 ## App structure
 The app contains a single app target, a unit test target, and an internal SPM package
 that vends two libraries; one depended on by the app target and the other depended on by
